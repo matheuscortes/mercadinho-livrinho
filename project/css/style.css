@@ -1,0 +1,253 @@
+/*CSS Reset - Eliminate all the margins of all the tags*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, Arial;
+}
+
+header {
+    background-color: yellow;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    display: inline-block;
+}
+
+.menu {
+    text-decoration: none; 
+    color: blue; 
+    float: right;
+    display: none;   
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    /* remove the markers */
+    list-style: none;
+}
+
+header nav ul li {
+    /* one next beside each other */
+    display: inline-block; 
+    margin: 15px; 
+    font-size: 1.2em;
+    font-weight: 700;    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+header nav ul li a:hover {    
+    color: black;
+}
+
+nav input, nav button {
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+nav input {
+    border-radius: 5px 0 0 5px; /*clockwise*/
+}
+
+nav button{
+    border-radius: 0 5px 5px 0;
+    background-color: #333;
+    color: #fff;
+    margin-left: -6px; 
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 1000px;
+    margin: auto; /*assigns the same margin to right and left sides*/
+}
+
+main .grid {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #333;
+    padding: 20px;
+    margin: 50px 0;
+}
+
+main .grid .coluna {
+    text-align: left;
+    padding: 5px;
+}
+
+main .grid .coluna img {
+    width: 90%;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+main .grid .coluna img:hover {
+    transform: scale(1.05);
+}
+
+main .grid .coluna h2 {
+    margin-bottom: 10px;
+}
+
+.cart-icon {
+    margin-bottom: 10px;
+}
+
+.botao {
+    background-color: #0000ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin: 15px 0;
+    transition: all 1s;
+}
+
+main .grid .coluna .botao:hover {
+    background-color: #8a2be2;
+}
+
+main h1 {
+    text-align: center;
+    margin: 25px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.grid-produtos .coluna {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #333;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.grid-produtos .coluna img {
+    width: 95%;
+}
+
+.grid-produtos .coluna p {
+    /*margin top/bottom = 15px margin left/right = 0*/
+    margin: 15px 0;  
+}
+
+.grid-produtos .coluna:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.preco {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #000;
+}
+
+footer {
+    background-color: #fff;
+    /*padding top/bottom = 15px padding left/right = 0*/
+    padding: 15px 0;    
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);    
+}
+
+.grid .coluna {
+    text-align: center;
+}
+
+.grid .coluna .valor {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead, .table tfoot {
+    background-color: #000;
+    color: #fff;
+}
+
+.table td {    
+    padding: 5px;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.campo {
+    border: 1px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.github {
+    display: flex;
+    align-items: center;  
+    justify-content: center;      
+}
+
+#github-icon {
+    color: #000;
+    margin-left: 3px;
+}
+
+body {
+    background-color: #ccc;
+}
+
+/* rules to mobile devices */
+@media (max-width: 420px) {
+    .menu, .show {
+        display: block; 
+    }
+
+    nav, nav ul li {
+        width: 100%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .grid-produtos, .grid {
+        grid-template-columns: 100%;        
+    }
+}

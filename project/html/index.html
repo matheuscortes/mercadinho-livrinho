@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="The most famous e-commerce in the ">
+    <link rel="shotcut icon" href="../images/icone.png">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/style.css"> 
+    <title>Mercadinho Livrinho</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Home">
+            <img src="../images/logo.png" alt="Mercadinho Livre">
+        </a>
+
+        <a href="javascript:menu()" class="menu" title="Mostrar/Esconder Menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html" title="Home">Home</a>
+                </li>
+                <li>
+                    <a href="telefonia.html" title="Telefonia">Telefonia</a>
+                </li>
+                <li>
+                    <a href="carrinho.html" title="Carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                <li>
+                    <form name="search" method="get" action="get.html"><!--GET - When there are no sensible data POST - When there are any sensible data-->
+                        <input type="text" name="search" placeholder="Palavra-chave">
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>                                     
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="../images/banner1.jpg" alt="Banner Mercadinho Livrinho">
+    </div>
+
+    <main>
+        <h1>Produtos em Destaque</h1>
+        <div class="grid-produtos">
+            <a href="notebook.html" title="Notebook Dell" class="coluna">
+                <img src="../images/note1936036609_1GG.jpg" alt="Notebook Dell">
+                <p class="preco">
+                    R$ 6.900, 90
+                </p>
+                <p>
+                    Notebook Dell, Core i7, 16GB, HD 480SSD
+                </p>
+            </a>
+
+            <a href="notebook.html" title="TV Samsung" class="coluna">
+                <img src="../images/tv3068549711_1GG.jpg" alt="TV Samsung">
+                <p class="preco">
+                    R$ 5.300, 90
+                </p>
+                <p>
+                    Smart TV Samsung 2021, 50 polegadas, Ultra 4k
+                </p>
+            </a>   
+            
+            <a href="notebook.html" title="Celular Samsung" class="coluna">
+                <img src="../images/celular2969521441_1GG.jpg" alt="Celular Samsung">
+                <p class="preco">
+                    R$ 5.300, 90
+                </p>
+                <p>
+                    Smartphone Samsung S71, 128GB, Tela Full HD
+                </p>
+            </a>  
+            
+            <a href="notebook.html" title="Notebook Dell" class="coluna">
+                <img src="../images/note3716186496_1GG.jpg" alt="Notebook Dell">
+                <p class="preco">
+                    R$ 4.900, 00
+                </p>
+                <p>
+                    Notebook Dell Inspiration, Core i5, 256GB SSD, 8GB
+                </p>
+            </a>   
+       </div>
+    </main>
+
+    <footer>
+        <div class="grid">
+            <div class="coluna">
+                <i class="fa-solid fa-credit-card fa-3x"></i>
+                <p>Pague com Cartão de Crédito</p>
+            </div>
+
+            <div class="coluna">
+                <i class="fa-solid fa-gifts fa-3x"></i>
+                <p>Parcele em até 6x sem Juros</p>
+            </div>
+
+            <div class="coluna">
+                <i class="fa-solid fa-truck fa-3x"></i>
+                <p>Frete grátis para compras acima de R$ 500,00</p>
+            </div>                        
+        </div>
+        <hr>   
+
+        <div class="github">
+            <p id="autoria">Desenvolvido por Matheus Cortes</p>
+            <a href="https://github.com/matheuscortes"><i id="github-icon" class="fa-brands fa-github 
+                fa-2x"></i></a>    
+        </div>      
+    </footer>
+
+    <script>
+        function menu() {
+            document.querySelector("header nav").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="The most famous e-commerce in the ">
+    <link rel="shotcut icon" href="../images/icone.png">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/style.css"> 
+    <title>Mercadinho Livrinho</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Home">
+            <img src="../images/logo.png" alt="Mercadinho Livre">
+        </a>
+
+        <a href="javascript:menu()" class="menu" title="Mostrar/Esconder Menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html" title="Home">Home</a>
+                </li>
+                <li>
+                    <a href="telefonia.html" title="Telefonia">Telefonia</a>
+                </li>
+                <li>
+                    <a href="carrinho.html" title="Carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                <li>
+                    <form name="search" method="get" action="get.html"><!--GET - When there are no sensible data POST - When there are any sensible data-->
+                        <input type="text" name="search" placeholder="Keyword">
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>                                     
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="../images/banner1.jpg" alt="Banner Mercadinho Livrinho">
+    </div>
+
+    <main>
+        <div class="grid">
+            <div class="coluna">
+                <img src="../images/note1936036609_1GG.jpg" alt="Notebook Dell">            
+                <p>Imagem meramente ilustrativa</p>
+            </div>
+
+            <div class="coluna">
+                <h2>Notebook Dell Core i7, 16GB, HD 520SSD, Placa de Vídeo 2GB Dedicada</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt omnis iure provident! Modi a praesentium necessitatibus iure dolor dolorum corporis fugiat mollitia. Nam ea deserunt nemo impedit fugit eaque unde.</p>
+            </div>
+
+            <div class="coluna">
+                <p class="valor">R$ 5.900, 90</p>
+                <p class="cart-icon">
+                    <i class="fa-solid fa-credit-card fa-2x"></i> 
+                    Pagamento em até 10x                  
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-truck fa-2x"></i>     
+                    Entrega em até 30 dias úteis           
+                </p>
+
+                <p>
+                    <a href="carrinho.html" title="Adicionar" class="botao">
+                        <i class="fa-solid fa-check"></i>
+                        Adicionar ao carrinho
+                    </a>
+                </p>
+            </div>
+        </div>        
+    </main>
+
+    <footer>
+        <div class="grid">
+            <div class="coluna">
+                <i class="fa-solid fa-credit-card fa-5x"></i>
+                <p>Pague com Cartão de Crédito</p>
+            </div>
+
+            <div class="coluna">
+                <i class="fa-solid fa-gifts fa-5x"></i>
+                <p>Parcele em até 6x sem Juros</p>
+            </div>
+
+            <div class="coluna">
+                <i class="fa-solid fa-truck fa-5x"></i>
+                <p>Frete grátis para compras acima de R$ 500,00</p>
+            </div>
+        </div>
+        <hr>
+        <p>Desenvolvido por Matheus Cortes</p>
+    </footer>
+
+    <script>
+        function menu() {
+            document.querySelector("header nav").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
